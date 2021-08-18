@@ -1,0 +1,12 @@
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.deps.json
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.dll
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\bin\Debug\netstandard2.0\WeatherApp.pdb
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.csproj.AssemblyReference.cache
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.AssemblyInfoInputs.cache
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.AssemblyInfo.cs
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.csproj.CoreCompileInputs.cache
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.dll
+C:\Users\majo.skp\Desktop\Weather\Weather\WeatherApp\obj\Debug\netstandard2.0\WeatherApp.pdb

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6EdPHJ+ZkSVcnY7ZWgrF6HyG8gTvpvJ5ujNjOAYQeGCGqoJ54DKZnXWzBEQF7dTMA+NmVj/QZv+fOK0uxjVxCQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\majo.skp\\Desktop\\Weather\\Weather\\WeatherApp.iOS\\WeatherApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\majo.skp\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\majo.skp\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\majo.skp\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\majo.skp\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
+  ],
+  "logs": []
+}

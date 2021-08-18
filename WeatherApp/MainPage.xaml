@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WeatherApp"
+             x:Class="WeatherApp.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" 
+                   TargetType="Label">
+                <Setter Property="FontSize" 
+                        Value="Small" />
+                <Setter Property="TextColor" 
+                        Value="Gray" />
+            </Style>
+            
+            <Style x:Key="labelResultStyle" 
+                   TargetType="Label">
+                <Setter Property="FontSize" 
+                        Value="Medium" />
+                <Setter Property="Margin" 
+                        Value="10,0,0,0" />
+            </Style>
+            
+            <local:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <Grid BackgroundColor="LightBlue" 
+              Padding="10,20,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="_cityEntry"
+                   Grid.Row="1" 
+                   Grid.Column="1"
+                   Margin="5,0"
+                   VerticalOptions="Center"
+                   BackgroundColor="DarkGray"
+                   TextColor="White"
+                   Text="Viborg" />
+
+            <Button Grid.Row="1" 
+                    Grid.Column="2"
+                    Text="Tjek Vejret" 
+                    BorderWidth="1"
+                    BorderColor="White"
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
+                    Clicked="OnGetWeatherButtonClicked" />
+        </Grid>
+
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Grid.Row="0" FontSize="Large" Padding="5" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Column="0" Text="Vejrudsigten" />
+
+
+                <Label BackgroundColor="DarkBlue" TextColor="White">
+                    <Label.Text>
+                        <MultiBinding StringFormat="{}{0} {1} {3} {4}">
+                            <Binding StringFormat="Vejret for"/>
+                            <Binding Path="Title" />
+                            <Binding Path="Wind.Speed"  />
+                            <Binding Path="Main.Temperature" />
+                            <Binding Path="location.Latitude" />
+                            <Binding Path="Weather[0].Visibility"/>
+                        </MultiBinding>
+                    </Label.Text>
+                </Label>
+
+
+                <Button Text="Hent location" Clicked="Button_Clicked"/>
+                <Label x:Name="LabelLocation" /> 
+                <Grid>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+ 
+                                        
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                                        
+
+                    <Rectangle Fill="lightblue"
+                        WidthRequest="510"
+                        HeightRequest="50"
+                        HorizontalOptions="Start" 
+                        Grid.Row="2">
+                                        
+                    </Rectangle>
+
+                    <Rectangle Fill="lightblue"
+                        WidthRequest="510"
+                        HeightRequest="50"
+                        HorizontalOptions="Start" 
+                        Grid.Row="3">
+                    </Rectangle>
+
+                    <Rectangle Fill="lightblue"
+                        WidthRequest="510"
+                        HeightRequest="50"
+                        HorizontalOptions="Start" 
+                        Grid.Row="4">
+                    </Rectangle>
+
+                    <Rectangle Fill="lightblue"
+                        WidthRequest="510"
+                        HeightRequest="20"
+                        HorizontalOptions="Start" 
+                        Grid.Row="5">
+                                    
+                    </Rectangle>
+
+                    <Rectangle Fill="lightblue"
+                        WidthRequest="510"
+                        HeightRequest="20"
+                        HorizontalOptions="Start" 
+                        Grid.Row="6">
+                    </Rectangle>
+
+                    <Rectangle Fill="lightblue"
+                        WidthRequest="510"
+                        HeightRequest="20"
+                        HorizontalOptions="Start" 
+                        Grid.Row="7">
+                    </Rectangle>
+                    
+                    
+
+                </Grid>
+
+            
+
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>    
+</ContentPage>
